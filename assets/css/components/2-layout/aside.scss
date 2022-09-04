@@ -1,0 +1,63 @@
+// Aside ============================
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 10;
+    padding: 50px 25px 20px;
+    background: #fff;
+    border-right: 1px solid #000;
+
+    .logo {
+        width: 100px;
+        height: 60px;
+        display: block;
+        margin: 0 auto 50px;
+
+        img {
+            @include ImgCon;
+        }
+    }
+
+    .nav {
+        &_link {
+            display: block;
+            margin-bottom: 40px;
+            position: relative;
+            padding-left: 45px;
+            text-transform: uppercase;
+
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 1.4;
+            @include transition;
+
+            &:hover {
+                color: $main-color;
+                transform: translateX(10px);
+            }
+
+            &.active {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    @include transformY;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: url("../images/active.png") no-repeat center;
+                    background-size: contain;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Aside end ========================

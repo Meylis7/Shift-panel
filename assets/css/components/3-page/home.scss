@@ -1,0 +1,216 @@
+// Mian ============================
+.main {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+
+    &>.inner {
+        padding: 50px 30px;
+
+        &_top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &_filter {
+            margin: 0 0 auto;
+        }
+    }
+
+    .home {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &>.inner {
+            width: calc(75% - 20px);
+        }
+
+        &_title {
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px 30px;
+
+            &_item {
+                width: calc(33.33% - 80px);
+                margin: 15px;
+                border-radius: 10px;
+                padding: 20px 25px 20px;
+
+                &:nth-child(1) {
+                    background: #DBF7F4;
+                }
+
+                &:nth-child(2) {
+                    background: #FFF7D7;
+                }
+
+                &:nth-child(3) {
+                    background: #FBE9EF;
+                }
+
+                &:nth-child(4) {
+                    background: #F4F3FF;
+                }
+
+                &:nth-child(5) {
+                    background: #DEFFAB;
+                }
+
+                &:nth-child(6) {
+                    background: #FFCFCF;
+                }
+
+                &-title {
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 1.5;
+                    margin-bottom: 15px;
+                }
+
+                &-number {
+                    font-weight: 300;
+                    font-size: 90px;
+                    line-height: 1;
+                    text-align: center;
+                }
+            }
+        }
+
+        .loads {
+            display: flex;
+            flex-wrap: wrap;
+
+            &_item {
+                width: calc(50% - 70px);
+                margin: 12px 10px;
+                padding: 20px 25px;
+                background: #fff;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+                border-radius: 10px;
+
+                &-photo {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 7px;
+
+                    img {
+                        @include ImgCov;
+                    }
+                }
+
+                &-group {
+                    margin: 0 10px;
+                }
+
+                &-title {
+                    font-weight: 300;
+                    font-size: 30px;
+                    line-height: 1.4;
+                    margin-bottom: 5px;
+                }
+
+                &-txt {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 1.3;
+                }
+
+                .dot {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    display: block;
+                    margin-right: 10px;
+
+                    &.green {
+                        background: #8CC63F;
+                    }
+
+                    &.yellow {
+                        background: yellow;
+                    }
+
+                    &.red {
+                        background: red;
+                    }
+                }
+
+                &-text {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .reminder {
+            width: calc(25% - 20px);
+
+            &_row {
+                margin-bottom: 25px;
+                display: flex;
+                align-items: center;
+            }
+
+            &_item {
+                display: block;
+                -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+                background: #fff;
+
+                &-photo {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    display: block;
+
+                    img {
+                        @include ImgCov;
+                    }
+                }
+
+                &-name {
+                    font-weight: 300;
+                    font-size: 26px;
+                    line-height: 1.4;
+                    margin-bottom: 5px;
+                }
+
+                &-txt {
+                    font-weight: 300;
+                    font-size: 11px;
+                    line-height: 1.2;
+                }
+            }
+
+            &_txt {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+// Mian end ========================

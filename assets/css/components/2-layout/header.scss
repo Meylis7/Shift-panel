@@ -1,0 +1,191 @@
+// Header ==========================
+.header {
+    padding: 20px 25px;
+    background: #fff;
+
+    &_row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_title {
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    &_group {
+        display: flex;
+        align-items: center;
+    }
+
+    &_search {
+        position: relative;
+
+        &-input {
+            width: 200px;
+            display: block;
+
+            input {
+                width: calc(100% - 30px);
+                padding: 12px 15px;
+                background: #f2f2f2;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 1.4;
+                border-radius: 20px;
+            }
+        }
+
+        &-btn {
+            position: absolute;
+            top: 50%;
+            @include transformY;
+            right: 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+
+            svg {
+                @include ImgCon;
+
+                path {
+                    @include transition;
+                }
+            }
+
+            &:hover {
+                path {
+                    stroke: $main-color;
+                }
+            }
+        }
+    }
+
+    .notification {
+        position: relative;
+        height: 25px;
+        width: 25px;
+        display: block;
+        margin: 0 40px 0 30px;
+
+        svg {
+            @include ImgCon;
+
+            path {
+                @include transition;
+            }
+        }
+
+        &:hover {
+            path {
+                stroke: #000;
+            }
+        }
+
+        &.active {
+            animation: alert 1s linear infinite;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -2px;
+                right: 3px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #000;
+            }
+        }
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+
+        &_photo {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+
+            img {
+                @include ImgCov;
+            }
+        }
+
+        &_group {
+            position: relative;
+            padding-right: 30px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                @include transformY;
+                width: 20px;
+                height: 10px;
+                background: url("../images/svg/user_arrow.svg") no-repeat center;
+                background-size: contain;
+            }
+        }
+
+        &_name {
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 1.4;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        &_prof {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #999999;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+@keyframes alert {
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes alert {
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+// Header end ======================

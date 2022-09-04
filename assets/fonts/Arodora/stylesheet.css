@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Arodora Pro';
+    src: url('ArodoraPro-Light.eot');
+    src: url('ArodoraPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('ArodoraPro-Light.woff2') format('woff2'),
+        url('ArodoraPro-Light.woff') format('woff'),
+        url('ArodoraPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arodora Pro';
+    src: url('ArodoraPro-LightItalic.eot');
+    src: url('ArodoraPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('ArodoraPro-LightItalic.woff2') format('woff2'),
+        url('ArodoraPro-LightItalic.woff') format('woff'),
+        url('ArodoraPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

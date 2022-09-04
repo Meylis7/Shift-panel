@@ -1,0 +1,20 @@
+// 1350 px ===================
+@include xlg-xxlg {}
+
+@include lg-xlg {}
+
+// 900 ====================================
+@include lg-lg {}
+
+// 600=========================
+@include md-lg {}
+
+// 400 ========================
+@include md-xsm {}
+
+@include md-sm {
+    .auto_container {
+        padding: 0 15px;
+    }
+
+}

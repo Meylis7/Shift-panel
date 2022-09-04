@@ -1,0 +1,108 @@
+
+
+
+function sleep(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+}
+
+
+// var ===========
+
+let burger = document.querySelector('.burger');
+let nav_bg = document.querySelector('.nav_bg');
+let nav_inner = document.querySelector('.nav_inner');
+
+let current_lang = document.querySelector('.current_lang');
+let lang = document.querySelector('.lang');
+let nav_group_label = document.querySelectorAll('.nav_group-label');
+let nav_group_drop = document.querySelectorAll('.nav_group-drop');
+
+
+
+
+// window.onscroll = function () {
+//     scrollPosition = Math.round(window.scrollY);
+
+//     if (scrollPosition > 150) {
+//         document.querySelector('.header').classList.add('stick');
+//     } else {
+//         document.querySelector('.header').classList.remove('stick');
+//     }
+// };
+
+
+
+window.onclick = function (e) {
+
+    // if (nav_bg != undefined) {
+    //     if (nav_bg.classList.contains('active') && !e.target.closest('.nav_inner')) {
+    //         nav_bg.classList.remove('active')
+    //     }
+    // }
+
+    // if (nav_inner != undefined) {
+    //     if (nav_inner.classList.contains('active') && !e.target.closest('.nav_inner')) {
+    //         nav_inner.classList.remove('active')
+    //     }
+    // }
+
+    // if (lang != undefined) {
+    //     if (lang.classList.contains('active') && !e.target.closest('.current_lang')) {
+    //         lang.classList.remove('active')
+    //     }
+    // }
+
+    // nav_group_drop.forEach(nav_group_drop => {
+    //     if (nav_group_drop != undefined) {
+    //         nav_group_drop.classList.contains('active') && !e.target.closest('.nav_group-inner') && !e.target.closest('.nav_group-link');
+    //         nav_group_drop.classList.remove('active')
+    //     }
+    // }
+    // );
+
+}
+
+
+// if (card_icon != undefined) {
+//     card_icon.addEventListener('click', function () {
+//         sleep(2).then(() => {
+//             food_box.classList.add('card');
+//             card_icon.classList.add('active');
+//             row_icon.classList.remove('active');
+//         });
+//     });
+// }
+
+
+// let panel = this.nextElementSibling;
+
+// if (nav_group_label != undefined) {
+//     nav_group_label.forEach(r => {
+//         r.addEventListener('click', function () {
+//             sleep(2).then(() => {
+//                 // nav_group_drop.forEach(p => {
+//                 //     p.classList.remove('active');
+//                 // })
+//                 this.nextElementSibling.classList.toggle("active");
+//             })
+//         });
+//     });
+// }
+
+
+// if (burger != undefined) {
+//     burger.addEventListener('click', function () {
+//         sleep(2).then(() => {
+//             nav_bg.classList.add('active');
+//             nav_inner.classList.add('active');
+//         });
+//     });
+// }
+
+// if (current_lang != undefined) {
+//     current_lang.addEventListener('click', function () {
+//         sleep(2).then(() => {
+//             lang.classList.toggle('active');
+//         });
+//     });
+// }
