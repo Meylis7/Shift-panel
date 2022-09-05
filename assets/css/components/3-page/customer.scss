@@ -1,0 +1,237 @@
+// Customers ========================
+.customer {
+    margin-top: 30px;
+
+    &_table {
+        width: 100%;
+        overflow-x: auto;
+
+        table {
+            width: 100%;
+            max-width: 1920px;
+            border-collapse: collapse;
+
+            thead {
+                tr {
+                    &:first-child {
+                        border-collapse: separate;
+                        border-spacing: 0 1em;
+
+                        th {
+                            padding: 30px 15px 0;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    &:last-child {
+                        th {
+                            padding: 0 15px 30px;
+                        }
+                    }
+                }
+
+                th {
+                    background: #fff;
+                    text-align: left;
+                    border-right: 1px solid #B3B3B3;
+                    text-transform: uppercase;
+
+                    span {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 1.3;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            @include transformY;
+                            left: 0;
+                            width: 25px;
+                            height: 25px;
+                            background: #F2F2F2;
+                        }
+
+                    }
+
+                    .th {
+                        &_row {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-top: 30px;
+                        }
+
+                        &_search {
+                            display: block;
+                            position: relative;
+                            width: calc(100% - 50px);
+
+                            input {
+                                width: calc(100% - 50px);
+                                padding: 10px 35px 10px 15px;
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 1.2;
+                                background: #F2F2F2;
+                                border-radius: 20px;
+
+                                &:focus {
+                                    background: #e6e6e6;
+                                }
+                            }
+
+                            &-btn {
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                                cursor: pointer;
+                                background: transparent;
+                                z-index: 1;
+                                position: absolute;
+                                top: 50%;
+                                @include transformY;
+                                right: 10px;
+
+                                &:hover {
+                                    path {
+                                        stroke: $main-color;
+                                    }
+                                }
+
+                                svg {
+                                    @include ImgCon;
+
+                                    path {
+                                        @include transition;
+                                    }
+                                }
+                            }
+                        }
+
+                        &_show {
+                            display: block;
+                            width: 30px;
+                            height: 20px;
+
+                            &:hover {
+                                path {
+                                    stroke: $main-color;
+                                    fill: $main-color;
+                                }
+                            }
+
+                            svg {
+                                @include ImgCon;
+
+                                path {
+                                    @include transition;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    background: #fff;
+
+                    &:nth-of-type(even) {
+                        background: #D9D9D9;
+
+                        td {
+                            span {
+                                &::before {
+                                    background: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    td {
+                        border-right: 1px solid #B3B3B3;
+                        padding: 12px 15px;
+
+                        span {
+                            display: block;
+                            position: relative;
+                            padding-left: 40px;
+
+                            font-weight: 300;
+                            font-size: 13px;
+                            line-height: 1.2;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                @include transformY;
+                                left: 0;
+                                width: 25px;
+                                height: 25px;
+                                background: #F2F2F2;
+                            }
+                        }
+                    }
+
+                    .td {
+                        &_row {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            a {
+                                width: 25px;
+                                height: 20px;
+                                display: block;
+                                margin-right: 10px;
+
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+
+                                &:first-child {
+                                    &:hover {
+                                        path {
+                                            fill: none !important;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    path {
+                                        fill: $main-color;
+                                        stroke: $main-color;
+                                    }
+                                }
+
+                                &.red {
+                                    &:hover {
+                                        path {
+                                            fill: none !important;
+                                        }
+                                    }
+                                }
+
+                                svg {
+                                    @include ImgCon;
+
+                                    path {
+                                        @include transition;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Customers end ====================

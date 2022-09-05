@@ -3,17 +3,106 @@
     width: calc(100% - 300px);
     margin-left: 300px;
 
-    &>.inner {
+    &_header {
         padding: 50px 30px;
 
-        &_top {
+        &-top {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
-        &_filter {
-            margin: 0 0 auto;
+        &-tabs {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 20px;
+                cursor: pointer;
+                margin-right: 15px;
+                background: #fff;
+                min-width: 80px;
+
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 1.3;
+                color: #000;
+                text-transform: uppercase;
+                padding: 8px 15px;
+
+                @include transition;
+
+                &:hover {
+                    background: $main-color;
+                    color: #fff;
+
+                    path {
+                        stroke: #fff;
+                        fill: #fff;
+                    }
+                }
+
+                &.active {
+                    background: $main-color;
+                    color: #fff;
+
+                    path {
+                        stroke: #fff;
+                        fill: #fff;
+                    }
+                }
+
+                span {
+                    width: 20px;
+                    height: 15px;
+                    display: block;
+                    margin-left: 8px;
+
+                    svg {
+                        @include ImgCon;
+
+                        path {
+                            @include transition;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-filter {
+            display: flex;
+            align-items: center;
+
+            &-item {
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-right: 15px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    path {
+                        fill: $main-color;
+                        stroke: $main-color;
+                    }
+                }
+
+                svg {
+                    @include ImgCon;
+
+                    path {
+                        @include transition;
+                    }
+                }
+            }
         }
     }
 
