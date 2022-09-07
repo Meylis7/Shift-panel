@@ -3,9 +3,11 @@
     width: calc(100% - 300px);
     margin-left: 300px;
 
-    &_header {
-        padding: 50px 30px;
+    &_inner {
+        padding: 40px 15px;
+    }
 
+    &_header {
         &-top {
             display: flex;
             align-items: center;

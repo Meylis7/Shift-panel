@@ -36,6 +36,10 @@
                     border-right: 1px solid #B3B3B3;
                     text-transform: uppercase;
 
+                    &:last-child {
+                        border-right: none;
+                    }
+
                     span {
                         display: block;
                         position: relative;
@@ -78,7 +82,7 @@
                                 font-size: 14px;
                                 line-height: 1.2;
                                 background: #F2F2F2;
-                                border-radius: 20px;
+                                border-radius: 10px;
 
                                 &:focus {
                                     background: #e6e6e6;
@@ -156,6 +160,10 @@
                     td {
                         border-right: 1px solid #B3B3B3;
                         padding: 12px 15px;
+
+                        &:last-child {
+                            border-right: none;
+                        }
 
                         span {
                             display: block;
