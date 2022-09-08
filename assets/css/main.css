@@ -722,6 +722,7 @@ li {
   background: #fff;
   text-align: left;
   border-right: 1px solid #B3B3B3;
+  border-bottom: none;
   text-transform: uppercase;
 }
 .customer_table table thead th:last-child {
@@ -1222,6 +1223,132 @@ li {
   font-weight: 300;
   font-size: 17px;
   line-height: 1.4;
+}
+
+.post_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.post_info .profile_desc {
+  width: calc(100% - 565px);
+}
+.post_box {
+  padding: 20px 25px;
+  background: #fff;
+  width: 500px;
+}
+.post_box-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+.post_box-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.4;
+}
+.post_box-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.post_box-edit a {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+.post_box-edit a:last-child {
+  margin-right: 0;
+}
+.post_box-edit a:hover path {
+  fill: #EF8011;
+}
+.post_box-edit a.delete:hover path {
+  fill: none;
+  stroke: #EF8011;
+}
+.post_box-edit a svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  -o-object-fit: contain;
+}
+.post_box-edit a svg path {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+.post_box-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.post_box-item {
+  width: calc(50% - 1px);
+  border-top: 1px solid #B3B3B3;
+  padding: 15px 0 20px;
+  position: relative;
+  text-align: center;
+}
+.post_box-item.full {
+  width: calc(100% - 1px);
+}
+.post_box-item.full::before {
+  content: none;
+}
+.post_box-item:nth-of-type(even)::before {
+  content: none;
+}
+.post_box-item:nth-child(8)::before, .post_box-item:nth-child(10)::before {
+  content: "";
+}
+.post_box-item:nth-child(9)::before, .post_box-item:nth-child(11)::before {
+  content: none;
+}
+.post_box-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-ransform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  right: 0;
+  width: 1px;
+  height: calc(100% - 20px);
+  background: #B3B3B3;
+}
+.post_box-item-suptitle {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1;
+  color: #EF8011;
+  margin-bottom: 10px;
+}
+.post_box-item-title {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1;
 }
 
 /* Slider */

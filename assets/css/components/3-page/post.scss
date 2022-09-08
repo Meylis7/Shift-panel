@@ -1,0 +1,138 @@
+// Post ======================
+.post {
+    &_info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .profile_desc {
+            width: calc(100% - 565px);
+        }
+    }
+
+    &_box {
+        padding: 20px 25px;
+        background: #fff;
+        width: 500px;
+
+        &-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        &-title {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 1.4;
+        }
+
+        &-edit {
+            display: flex;
+            align-items: center;
+
+            a {
+                width: 20px;
+                height: 20px;
+                margin-right: 12px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    path {
+                        fill: $main-color;
+                    }
+                }
+
+                &.delete {
+                    &:hover {
+                        path {
+                            fill: none;
+                            stroke: $main-color;
+                        }
+                    }
+                }
+
+                svg {
+                    @include ImgCon;
+
+                    path {
+                        @include transition;
+                    }
+                }
+            }
+        }
+
+        &-info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            width: calc(50% - 1px);
+            border-top: 1px solid #B3B3B3;
+            padding: 15px 0 20px;
+            position: relative;
+            text-align: center;
+
+            &.full {
+                width: calc(100% - 1px);
+
+                &::before {
+                    content: none;
+                }
+            }
+
+            &:nth-of-type(even) {
+                &::before {
+                    content: none;
+                }
+            }
+
+            &:nth-child(8),
+            &:nth-child(10) {
+                &::before {
+                    content: '';
+                }
+            }
+
+            &:nth-child(9),
+            &:nth-child(11) {
+                &::before {
+                    content: none;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                @include transformY;
+                right: 0;
+                width: 1px;
+                height: calc(100% - 20px);
+                background: #B3B3B3;
+            }
+
+
+            &-suptitle {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 1;
+                color: $main-color;
+                margin-bottom: 10px;
+            }
+
+            &-title {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+// Post end ==================
