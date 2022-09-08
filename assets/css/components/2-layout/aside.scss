@@ -10,6 +10,12 @@
     background: #fff;
     border-right: 1px solid #000;
 
+    .mobile {
+        &_search {
+            display: none;
+        }
+    } 
+
     .logo {
         width: 100px;
         height: 60px;

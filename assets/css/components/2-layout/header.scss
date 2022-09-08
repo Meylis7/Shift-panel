@@ -3,6 +3,10 @@
     padding: 20px 25px;
     background: #fff;
 
+    .burger {
+        display: none;
+    }
+
     &_row {
         display: flex;
         align-items: center;
