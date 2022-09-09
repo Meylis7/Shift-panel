@@ -5,10 +5,11 @@
     &_table {
         width: 100%;
         overflow-x: auto;
+        padding-bottom: 10px;
 
         table {
             width: 100%;
-            max-width: 1920px;
+            min-width: 1450px;
             border-collapse: collapse;
 
             thead {

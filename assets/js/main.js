@@ -10,6 +10,8 @@ function sleep(time) {
 
 let burger = document.querySelector('.burger');
 let aside = document.querySelector('.aside');
+let aside_inner = document.querySelector('.aside_inner');
+let body = document.querySelector('body');
 
 
 
@@ -32,6 +34,8 @@ window.onclick = function (e) {
     if (aside != undefined) {
         if (aside.classList.contains('active') && !e.target.closest('.mobile_search')) {
             aside.classList.remove('active')
+            aside_inner.classList.remove('active')
+            body.classList.remove('active')
         }
     }
 
@@ -89,6 +93,8 @@ if (burger != undefined) {
     burger.addEventListener('click', function () {
         sleep(2).then(() => {
             aside.classList.add('active');
+            aside_inner.classList.add('active');
+            body.classList.add('active');
         });
     });
 }

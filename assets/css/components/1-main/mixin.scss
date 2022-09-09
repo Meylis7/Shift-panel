@@ -76,8 +76,8 @@
 }
 
 // =====
-@mixin md-xsm {
-    @media (max-width: 400px) {
+@mixin md-md {
+    @media (max-width: 500px) {
         @content;
     }
 }

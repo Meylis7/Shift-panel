@@ -1,20 +1,22 @@
 // Aside ============================
 .aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    z-index: 10;
-    padding: 50px 25px 20px;
-    background: #fff;
-    border-right: 1px solid #000;
+    &_inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        z-index: 10;
+        padding: 50px 25px 20px;
+        background: #fff;
+        border-right: 1px solid #000;
+    }
 
     .mobile {
         &_search {
             display: none;
         }
-    } 
+    }
 
     .logo {
         width: 100px;

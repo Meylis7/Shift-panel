@@ -13,18 +13,35 @@
 
     <!-- Aside ================================================ -->
     <aside class="aside">
-        <a href="#" class="logo">
-            <img src="assets/images/logo.png" alt="logo">
-        </a>
+        <div class="aside_inner">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
 
-        <nav class="nav">
-            <a href="#" class="nav_link active">Dashboard</a>
-            <a href="#" class="nav_link">Counter Agents</a>
-            <a href="#" class="nav_link">Customers</a>
-            <a href="#" class="nav_link">Companies</a>
-            <a href="#" class="nav_link">Loads/Orders</a>
-        </nav>
+            <nav class="nav">
+                <a href="#" class="nav_link active">Dashboard</a>
+                <a href="#" class="nav_link">Counter Agents</a>
+                <a href="#" class="nav_link">Customers</a>
+                <a href="#" class="nav_link">Companies</a>
+                <a href="#" class="nav_link">Loads/Orders</a>
 
+                <form action="#" class="mobile_search">
+                    <div class="mobile_search-input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+
+                    <button type="submit" class="mobile_search-btn">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.03 19.99C16.1828 19.99 20.36 15.8128 20.36 10.66C20.36 5.50714 16.1828 1.32996 11.03 1.32996C5.87721 1.32996 1.69995 5.50714 1.69995 10.66C1.69995 15.8128 5.87721 19.99 11.03 19.99Z"
+                                stroke="#B3B3B3" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M25.1898 24.82L17.6299 17.26" stroke="#B3B3B3" stroke-width="2"
+                                stroke-miterlimit="10" />
+                        </svg>
+                    </button>
+                </form>
+            </nav>
+        </div>
     </aside>
     <!-- Aside end ============================================ -->
 
@@ -32,9 +49,15 @@
     <main class="main">
         <header class="header">
             <div class="header_row">
-                <h2 class="header_title">
-                    Counter agents
-                </h2>
+                <div class="header_group">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+
+                    <h2 class="header_title">
+                        Counter agents
+                    </h2>
+                </div>
 
                 <div class="header_group">
                     <form action="#" class="header_search">
@@ -54,7 +77,7 @@
                         </button>
                     </form>
 
-                    <a href="#" class="notification">
+                    <a href="#" class="notification active">
                         <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.8801 20.75C16.9074 21.3008 16.8226 21.8514 16.6306 22.3684C16.4387 22.8853 16.1437 23.3579 15.7635 23.7574C15.3834 24.1569 14.9259 24.4749 14.4191 24.6923C13.9122 24.9096 13.3665 25.0217 12.8151 25.0217C12.2636 25.0217 11.7179 24.9096 11.2111 24.6923C10.7042 24.4749 10.2469 24.1569 9.86669 23.7574C9.48654 23.3579 9.19158 22.8853 8.99963 22.3684C8.80768 21.8514 8.72279 21.3008 8.75012 20.75H16.8801Z"
@@ -103,25 +126,30 @@
                             Canceled
                         </a>
                     </div>
-    
+
                     <div class="main_header-filter">
                         <a href="#" class="main_header-filter-item">
-                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.569824 1.93005H11.5299" stroke="#B3B3B3" stroke-width="3"
                                     stroke-miterlimit="10" />
-                                <path d="M2.01001 6.81995H10.09" stroke="#B3B3B3" stroke-width="3" stroke-miterlimit="10" />
-                                <path d="M3.76001 11.71H8.33997" stroke="#B3B3B3" stroke-width="3" stroke-miterlimit="10" />
+                                <path d="M2.01001 6.81995H10.09" stroke="#B3B3B3" stroke-width="3"
+                                    stroke-miterlimit="10" />
+                                <path d="M3.76001 11.71H8.33997" stroke="#B3B3B3" stroke-width="3"
+                                    stroke-miterlimit="10" />
                             </svg>
                         </a>
                         <a href="#" class="main_header-filter-item">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.3799 6.22004V9.42004H9.68982V15.1H6.49988V9.42004H0.819824V6.22004H6.49988V0.540039H9.68982V6.22004H15.3799Z"
                                     fill="#B3B3B3" />
                             </svg>
                         </a>
                         <a href="#" class="main_header-filter-item">
-                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M11.64 5.36004L6.20996 11.32L0.77002 5.36004H4.07996V0.540039H8.31995V5.36004H11.64Z"
                                     fill="#B3B3B3" />
@@ -129,7 +157,8 @@
                             </svg>
                         </a>
                         <a href="#" class="main_header-filter-item">
-                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M14.59 9.41005V6.22005H13.13C13.0125 5.7286 12.8167 5.25927 12.55 4.83005L13.55 3.83005L11.29 1.57005L10.29 2.57005C9.85214 2.32313 9.38521 2.13166 8.90002 2.00005V0.550049H5.70996V2.00005C5.21634 2.1254 4.7421 2.31715 4.30005 2.57005L3.30005 1.57005L1 3.80005L2 4.80005C1.74897 5.23594 1.55733 5.70341 1.43005 6.19005H0V9.38005H1.45996C1.58724 9.86669 1.779 10.3342 2.03003 10.7701L1.03003 11.7701L3.28003 14.0201L4.28003 13.0201C4.71943 13.2711 5.19023 13.4628 5.68005 13.59V15.05H8.87V13.59C9.35518 13.4584 9.82211 13.267 10.26 13.0201L11.26 14.0201L13.52 11.7701L12.52 10.7701C12.7867 10.3408 12.9825 9.8715 13.1 9.38005L14.59 9.41005ZM4.17004 7.82005C4.16807 7.19619 4.35129 6.58579 4.69666 6.06625C5.04202 5.5467 5.53387 5.14141 6.10986 4.90176C6.68586 4.6621 7.32016 4.59888 7.93213 4.7201C8.5441 4.84132 9.10623 5.14154 9.54736 5.58267C9.9885 6.02381 10.2887 6.586 10.4099 7.19798C10.5311 7.80995 10.4679 8.44413 10.2283 9.02013C9.98862 9.59612 9.58339 10.088 9.06384 10.4333C8.5443 10.7787 7.93392 10.962 7.31006 10.9601C6.47809 10.9574 5.68094 10.6257 5.09265 10.0374C4.50436 9.44915 4.17268 8.65201 4.17004 7.82005V7.82005Z"
                                     fill="#B3B3B3" />
@@ -138,7 +167,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="customer">
                 <div class="customer_table">
                     <table>
@@ -160,7 +189,7 @@
                                     <span>Status</span>
                                 </th>
                                 <th>
-    
+
                                 </th>
                             </tr>
                             <tr>
@@ -181,7 +210,7 @@
                                                 </svg>
                                             </button>
                                         </form>
-    
+
                                         <a href="#" class="th_show">
                                             <svg width="29" height="19" viewBox="0 0 29 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +224,7 @@
                                         </a>
                                     </div>
                                 </th>
-    
+
                                 <th>
                                     <div class="th_row">
                                         <form action="#" class="th_search">
@@ -213,7 +242,7 @@
                                                 </svg>
                                             </button>
                                         </form>
-    
+
                                         <a href="#" class="th_show">
                                             <svg width="29" height="19" viewBox="0 0 29 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +256,7 @@
                                         </a>
                                     </div>
                                 </th>
-    
+
                                 <th>
                                     <div class="th_row">
                                         <form action="#" class="th_search">
@@ -245,7 +274,7 @@
                                                 </svg>
                                             </button>
                                         </form>
-    
+
                                         <a href="#" class="th_show">
                                             <svg width="29" height="19" viewBox="0 0 29 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +288,7 @@
                                         </a>
                                     </div>
                                 </th>
-    
+
                                 <th>
                                     <div class="th_row">
                                         <form action="#" class="th_search">
@@ -277,7 +306,7 @@
                                                 </svg>
                                             </button>
                                         </form>
-    
+
                                         <a href="#" class="th_show">
                                             <svg width="29" height="19" viewBox="0 0 29 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +320,7 @@
                                         </a>
                                     </div>
                                 </th>
-    
+
                                 <th>
                                     <div class="th_row">
                                         <form action="#" class="th_search">
@@ -309,7 +338,7 @@
                                                 </svg>
                                             </button>
                                         </form>
-    
+
                                         <a href="#" class="th_show">
                                             <svg width="29" height="19" viewBox="0 0 29 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -324,11 +353,11 @@
                                     </div>
                                 </th>
                                 <th>
-    
+
                                 </th>
                             </tr>
                         </thead>
-    
+
                         <tbody>
                             <tr>
                                 <td>
