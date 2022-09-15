@@ -1062,6 +1062,11 @@
                 "info": false,
                 "lengthChange": false,
                 "pageLength": 50,
+                columnDefs: [
+                    { orderable: false, targets: -1 }
+                ],
+
+                "searching": false,
                 "language": {
                     "url": "dataTables.russian.lang",
                     "search": "Поиск:",
@@ -1072,8 +1077,19 @@
                         "last": "Последняя"
                     },
                 }
+
+
             });
         });
+
+        // var table = $('.customer_table table').DataTable();
+        // $(".th_search-input input").on('keyup click', function () {
+        //     table.columns([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).search($(this).val()).draw();
+        // });
+
+        // $(".th_search-input input").on('keyup click', function () {
+        //     table.column(10).search($(this).val()).draw();
+        // });
     </script>
 </body>
 
