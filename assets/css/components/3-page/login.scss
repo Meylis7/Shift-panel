@@ -1,0 +1,17 @@
+// Login ======================
+.login {
+    &_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_form {
+        background: #fff;
+        padding: 25px 50px;
+        max-width: 700px;
+        width: calc(100% - 100px);
+    }
+}
+
+// Login end ==================

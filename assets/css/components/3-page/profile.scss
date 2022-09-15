@@ -1,5 +1,9 @@
 // Profile ============================
 .profile {
+    .customer_table {
+        margin-bottom: 30px;
+    }
+
     &_box {
         background: #fff;
         padding: 35px;
@@ -13,25 +17,14 @@
             &.big {
                 .profile_box-item {
                     width: calc(33.33% - 1px);
-                    border-bottom: 1px solid #B3B3B3;
-
-                    &:last-child {
-                        border-bottom: none;
-
-                        
-                    }
-
-                    &:nth-child(4),
-                    &:nth-child(5) {
-                        border-top: none;
-                    }
                 }
             }
         }
 
         &-item {
             width: calc(20% - 1px);
-            border-bottom: 1px solid #B3B3B3;
+            border-top: 1px solid #B3B3B3;
+            border-bottom: none !important;
             text-align: center;
             padding: 20px 0;
             position: relative;
@@ -43,6 +36,10 @@
                 width: calc(100% - 1px) !important;
             }
 
+            &.quarter {
+                width: calc(66.67% - 1px) !important;
+            }
+
             &::after {
                 content: '';
                 position: absolute;
@@ -52,31 +49,6 @@
                 width: .5px;
                 height: calc(100% - 20px);
                 background: #B3B3B3;
-            }
-
-            &:first-child,
-            &:nth-child(2) {
-                border-top: 1px solid #B3B3B3;
-            }
-
-            // &:nth-child(5),
-            // &:nth-child(10),
-            // &:last-child {
-            //     &::after {
-            //         display: none;
-            //     }
-            // }
-
-            &:last-child {
-                border-bottom: none;
-            }
-
-            &:nth-child(-n + 5) {
-                border-top: 1px solid #B3B3B3;
-            }
-
-            &:nth-last-child(-n+5) {
-                border-bottom: none;
             }
 
             &-title {
@@ -113,7 +85,7 @@
             margin-right: 20px;
 
             img {
-                @include ImgCon;
+                @include ImgCov;
             }
         }
 
@@ -385,6 +357,133 @@
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 1.4;
+            }
+        }
+    }
+
+    .chat {
+        background: #fff;
+        padding: 35px;
+
+        &_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #B3B3B3;
+        }
+
+        &_title {
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 1.2;
+        }
+
+        &_txt {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1;
+            position: relative;
+            display: block;
+            border-radius: 20px;
+            border: 1px solid #B3B3B3;
+            padding: 10px 20px;
+        }
+
+        &_item {
+            width: 45%;
+
+            &.left {
+                margin: 0 auto 20px 0;
+            }
+
+            &.right {
+                margin: 0 0 20px auto;
+            }
+
+            &-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &-user {
+                display: flex;
+                align-items: center;
+            }
+
+            &-photo {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                margin-right: 15px;
+
+                img {
+                    @include ImgCov;
+                }
+            }
+
+            &-name {
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 1.3;
+                margin-bottom: 5px;
+            }
+
+            &-date {
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 1.1;
+            }
+
+            &-edit {
+                display: flex;
+                align-items: center;
+
+                a {
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        path {
+                            fill: $main-color;
+                        }
+                    }
+
+                    &.delete {
+                        &:hover {
+                            path {
+                                stroke: $main-color;
+                                fill: none;
+                            }
+                        }
+                    }
+
+                    svg {
+                        @include ImgCon;
+
+                        path {
+                            @include transition;
+                        }
+                    }
+                }
+            }
+
+            &-txt {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.3;
+                background: #F2F2F2;
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin-top: 12px;
             }
         }
     }
