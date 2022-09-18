@@ -65,31 +65,6 @@
             &_box {
                 &-item {
                     width: calc(33.33% - 1px);
-
-                    // &:nth-child(5),
-                    // &:nth-child(10) {
-                    //     &::after {
-                    //         display: block;
-                    //     }
-                    // }
-
-                    // &:nth-child(3),
-                    // &:nth-child(6),
-                    // &:nth-child(9),
-                    // &:nth-child(12) {
-                    //     &::after {
-                    //         display: none;
-                    //     }
-                    // }
-
-                    // &:nth-child(4),
-                    // &:nth-child(5) {
-                    //     border-top: none;
-                    // }
-
-                    // &:nth-last-child(-n+3) {
-                    //     border-bottom: none;
-                    // }
                 }
             }
         }
@@ -465,34 +440,6 @@
                 &-item {
                     width: calc(50% - 1px);
                     min-height: 60px;
-                    // border-bottom: 1px solid #B3B3B3;
-
-                    // &:nth-child(3),
-                    // &:nth-child(5),
-                    // &:nth-child(9),
-                    // &:last-child {
-                    //     &::after {
-                    //         display: block;
-                    //     }
-                    // }
-
-                    // &:nth-of-type(even) {
-                    //     &::after {
-                    //         display: none;
-                    //     }
-                    // }
-
-                    // &:nth-last-child(-n+3) {
-                    //     border-bottom: 1px solid #B3B3B3;
-                    // }
-
-                    // &:last-child {
-                    //     border-bottom: none;
-                    // }
-
-                    // &:nth-child(3) {
-                    //     border-top: none;
-                    // }
 
                     &-txt {
                         font-size: 15px;
@@ -584,6 +531,12 @@
                 &_item {
                     width: calc(100% - 40px);
                     margin: 10px 0;
+                }
+            }
+
+            .currency {
+                &_title {
+                    font-size: 30px;
                 }
             }
         }

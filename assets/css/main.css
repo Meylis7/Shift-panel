@@ -653,6 +653,45 @@ li {
   line-height: 1.2;
   text-transform: uppercase;
 }
+.main .home .currency {
+  display: block;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.main .home .currency_sublable {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1;
+  margin-right: 15px;
+}
+.main .home .currency_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .home .currency_title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.4;
+  color: #F7931E;
+  margin: 10px 0;
+  font-family: "Michroma", sans-serif;
+}
+.main .home .currency_title span {
+  color: #000;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-family: "Arodora Pro", sans-serif;
+}
 .main .home .reminder {
   width: calc(25% - 20px);
 }
@@ -2616,6 +2655,9 @@ li {
   .main .home .reminder_item {
     width: calc(100% - 40px);
     margin: 10px 0;
+  }
+  .main .home .currency_title {
+    font-size: 30px;
   }
 }
 @media (max-width: 500px) {

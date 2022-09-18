@@ -250,6 +250,50 @@
             }
         }
 
+        .currency {
+            display: block;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #fff;
+
+            &_sublable {
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 1;
+
+                margin-right: 15px;
+            }
+
+            &_row {
+                display: flex;
+                align-items: center;
+            }
+
+            &_title {
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 1.4;
+                color: #F7931E;
+                margin: 10px 0;
+                font-family: 'Michroma', sans-serif;
+
+
+                span {
+                    color: #000;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 1.4;
+                    text-transform: uppercase;
+                    font-family: 'Arodora Pro', sans-serif;
+
+                }
+            }
+        }
+
         .reminder {
             width: calc(25% - 20px);
 
