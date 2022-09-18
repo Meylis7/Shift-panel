@@ -544,7 +544,13 @@ table.dataTable td {
 
 .dataTables_wrapper .dataTables_filter {
     float: right;
-    text-align: right
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.dataTables_wrapper .dataTables_filter label {
+    line-height: 1.3;
+    letter-spacing: .6px;
 }
 
 .dataTables_wrapper .dataTables_filter input {
@@ -552,7 +558,7 @@ table.dataTable td {
     border-radius: 3px;
     padding: 5px;
     background-color: transparent;
-    margin-left: 3px
+    margin-left: 5px
 }
 
 .dataTables_wrapper .dataTables_info {
@@ -564,22 +570,58 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_paginate {
     float: right;
     text-align: right;
-    padding-top: .25em
+    margin-top: 30px;
+    padding-top: .25em;
+    display: flex;
+    align-items: center;
+}
+
+.dataTables_wrapper .dataTables_paginate span {
+    display: flex;
+    align-items: center;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     box-sizing: border-box;
-    display: inline-block;
-    min-width: 1.5em;
-    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 10px;
     margin-left: 2px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+
     text-align: center;
     text-decoration: none !important;
     cursor: pointer;
     color: #333 !important;
     border: 1px solid transparent;
-    border-radius: 2px
+    border-radius: 2px;
+
 }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next,
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 7px 10px;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+    margin-left: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    margin-right: 10px;
+}
+
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {

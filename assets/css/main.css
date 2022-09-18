@@ -747,9 +747,24 @@ li {
   margin-top: 30px;
 }
 .customer_table {
+  padding-bottom: 10px;
+}
+.customer_table::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+.customer_table .dataTables_scroll {
   width: 100%;
   overflow-x: auto;
-  padding-bottom: 10px;
+}
+.customer_table .dataTables_scrollHeadInner {
+  width: 100% !important;
+}
+.customer_table .dataTables_scrollHeadInner table {
+  width: 100% !important;
+}
+.customer_table .dataTables_scrollBody table {
+  width: 100% !important;
 }
 .customer_table table {
   width: 100%;
@@ -761,11 +776,8 @@ li {
   border-spacing: 0 1em;
 }
 .customer_table table thead tr:first-child th {
-  padding: 30px 15px 0;
+  padding: 30px 15px 30px;
   margin-bottom: 20px;
-}
-.customer_table table thead tr:last-child th {
-  padding: 0 15px 30px;
 }
 .customer_table table thead th {
   background: #fff;
