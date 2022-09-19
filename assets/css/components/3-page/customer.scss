@@ -164,9 +164,10 @@
                     background: #fff;
 
                     &:nth-of-type(even) {
-                        background: #D9D9D9;
 
                         td {
+                            background: #D9D9D9;
+
                             span {
                                 &::before {
                                     background: #fff;
@@ -178,6 +179,7 @@
                     td {
                         border-right: 1px solid #B3B3B3;
                         padding: 12px 15px;
+                        background: #fff;
 
                         &:last-child {
                             border-right: none;
@@ -201,6 +203,38 @@
                                 width: 25px;
                                 height: 25px;
                                 background: #F2F2F2;
+                            }
+
+                            &.inactive {
+                                padding-left: 60px;
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    @include transformY;
+                                    left: 35px;
+                                    width: 15px;
+                                    height: 15px;
+                                    background: #FBB03B;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            &.active {
+                                padding-left: 60px;
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    @include transformY;
+                                    left: 35px;
+                                    width: 15px;
+                                    height: 15px;
+                                    background: #8CC63F;
+                                    border-radius: 50%;
+                                }
                             }
                         }
                     }

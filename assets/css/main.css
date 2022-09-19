@@ -893,7 +893,7 @@ li {
 .customer_table table tbody tr {
   background: #fff;
 }
-.customer_table table tbody tr:nth-of-type(even) {
+.customer_table table tbody tr:nth-of-type(even) td {
   background: #D9D9D9;
 }
 .customer_table table tbody tr:nth-of-type(even) td span::before {
@@ -902,6 +902,7 @@ li {
 .customer_table table tbody tr td {
   border-right: 1px solid #B3B3B3;
   padding: 12px 15px;
+  background: #fff;
 }
 .customer_table table tbody tr td:last-child {
   border-right: none;
@@ -927,6 +928,42 @@ li {
   width: 25px;
   height: 25px;
   background: #F2F2F2;
+}
+.customer_table table tbody tr td span.inactive {
+  padding-left: 60px;
+}
+.customer_table table tbody tr td span.inactive::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-ransform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 35px;
+  width: 15px;
+  height: 15px;
+  background: #FBB03B;
+  border-radius: 50%;
+}
+.customer_table table tbody tr td span.active {
+  padding-left: 60px;
+}
+.customer_table table tbody tr td span.active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-ransform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 35px;
+  width: 15px;
+  height: 15px;
+  background: #8CC63F;
+  border-radius: 50%;
 }
 .customer_table table tbody tr .td_row {
   display: -webkit-box;

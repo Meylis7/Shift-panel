@@ -587,7 +587,7 @@ table.dataTable td {
     align-items: center;
     justify-content: center;
     padding: 7px 10px;
-    margin-left: 2px;
+    margin: 0 3px;
 
     font-size: 14px;
     font-weight: 400;
@@ -599,7 +599,14 @@ table.dataTable td {
     color: #333 !important;
     border: 1px solid transparent;
     border-radius: 2px;
+}
 
+.dataTables_wrapper .dataTables_paginate .paginate_button:first-child {
+    margin-left: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:last-child {
+    margin-right: 0;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.next,
@@ -615,11 +622,11 @@ table.dataTable td {
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.next {
-    margin-left: 0;
+    margin-left: 5px;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.previous {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 
