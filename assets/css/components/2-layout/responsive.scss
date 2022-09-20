@@ -369,6 +369,35 @@
 
         // Post end ============
 
+        // Cards ================
+        .card {
+            &_item {
+                width: calc(33.33% - 60px);
+                margin: 15px;
+                padding: 40px 15px;
+
+                &-photo {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                &-name {
+                    font-size: 18px;
+                }
+
+                &-txt {
+                    font-size: 13px;
+                }
+
+                &-link {
+                    font-size: 16px;
+                    padding: 8px 24px;
+                }
+            }
+        }
+
+        // Cards end ============
+
     }
 }
 
@@ -455,9 +484,26 @@
                     }
                 }
             }
+
+            .chat {
+                &_item {
+                    width: 70%;
+                }
+            }
         }
 
         // Profile end ========
+
+        // Cards ================
+        .card {
+            &_item {
+                width: calc(50% - 60px);
+                margin: 15px;
+                padding: 40px 15px;
+            }
+        }
+
+        // Cards end ============
     }
 }
 
@@ -505,6 +551,20 @@
 
     // Header end ==========
 
+    // Login ==============
+    .login {
+        &_form {
+            padding: 25px;
+            width: calc(100% - 100px);
+        }
+
+        &_title {
+            font-size: 24px;
+        }
+    }
+
+    // Login end ==========
+
     .main {
 
         // Home ============
@@ -542,6 +602,50 @@
         }
 
         // Home end ========
+
+        // Profile ============
+        .profile {
+            &_user {
+                &-name {
+                    font-size: 18px;
+                }
+            }
+
+            &_box {
+                &-info {
+                    &.big {
+                        .profile_box-item {
+                            width: calc(50% - 1px);
+
+                            &:nth-child(2) {
+                                width: calc(100% - 1px);
+                            }
+                        }
+                    }
+                }
+
+                &-item {
+                    &.quarter {
+                        width: calc(100% - 1px) !important;
+                    }
+                }
+            }
+
+            .chat {
+                &_item {
+                    &-photo {
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    &-name {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        // Profile end ========
     }
 }
 
@@ -592,6 +696,24 @@
     }
 
     // Header end ==========
+
+    // Login ==============
+    .login {
+        &_title {
+            font-size: 20px;
+        }
+
+        &_input {
+            width: 100%;
+            margin: 7px 0;
+
+            &.full {
+                width: 100%;
+            }
+        }
+    }
+
+    // Login end ==========
 
     .main {
 
@@ -693,6 +815,14 @@
             }
 
             &_box {
+                &-info {
+                    &.big {
+                        .profile_box-item {
+                            width: calc(100% - 1px);
+                        }
+                    }
+                }
+
                 &-item {
                     width: calc(100% - 1px);
 
@@ -745,8 +875,26 @@
                     }
                 }
             }
+
+            .chat {
+                &_item {
+                    width: 95%;
+                }
+            }
         }
 
         // Profile end ============
+
+        // Cards ================
+        .card {
+            &_item {
+                width: calc(100% - 60px);
+                max-width: 350px;
+                margin: 15px auto;
+                padding: 40px 15px;
+            }
+        }
+
+        // Cards end ============
     }
 }
