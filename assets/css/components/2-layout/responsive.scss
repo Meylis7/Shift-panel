@@ -52,6 +52,8 @@
             }
 
             &_info {
+                flex-wrap: wrap;
+
                 .profile_desc {
                     width: calc(100% - 465px);
                 }
@@ -70,6 +72,14 @@
         }
 
         // Profile end ============
+
+        // Edit ================
+        .edit {
+            width: calc(100% - 40px);
+            margin-top: 40px;
+        }
+
+        // Edit end ============
     }
 }
 
@@ -305,17 +315,6 @@
                 }
             }
         }
-
-        // Home ===========
-        .home {
-            .hero {
-                &_item {
-                    &-number {}
-                }
-            }
-        }
-
-        // Home end =======
 
         // Profile ===========
         .profile {
@@ -714,6 +713,53 @@
     }
 
     // Login end ==========
+
+    // Edit ================
+    .edit {
+        &_header {
+            &-input {
+                &.date {
+                    max-width: 200px;
+                }
+
+                label {
+                    font-size: 15px;
+                    min-width: 50px;
+                }
+
+                input {
+                    font-size: 14px;
+                    width: calc(100% - 70px);
+                }
+            }
+        }
+
+        &_main {
+            &-title {
+                font-size: 15px;
+            }
+
+            &-input {
+                input {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &_body {
+            &-title {
+                font-size: 15px;
+            }
+
+            &-input {
+                input {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // Edit end ============
 
     .main {
 

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/data-table.css">
+    <link rel="stylesheet" href="assets/fonts/Arodora/stylesheet.css">
+
+    <title>Edit page</title>
+</head>
+
+<body>
+
+    <!-- Aside ================================================ -->
+    <aside class="aside">
+        <div class="aside_inner">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+
+            <nav class="nav">
+                <a href="#" class="nav_link active">Dashboard</a>
+                <a href="#" class="nav_link">Counter Agents</a>
+                <a href="#" class="nav_link">Customers</a>
+                <a href="#" class="nav_link">Companies</a>
+                <a href="#" class="nav_link">Loads/Orders</a>
+
+                <form action="#" class="mobile_search">
+                    <div class="mobile_search-input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+
+                    <button type="submit" class="mobile_search-btn">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.03 19.99C16.1828 19.99 20.36 15.8128 20.36 10.66C20.36 5.50714 16.1828 1.32996 11.03 1.32996C5.87721 1.32996 1.69995 5.50714 1.69995 10.66C1.69995 15.8128 5.87721 19.99 11.03 19.99Z"
+                                stroke="#B3B3B3" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M25.1898 24.82L17.6299 17.26" stroke="#B3B3B3" stroke-width="2"
+                                stroke-miterlimit="10" />
+                        </svg>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </aside>
+    <!-- Aside end ============================================ -->
+
+    <!-- Main ================================================= -->
+    <main class="main">
+        <header class="header">
+            <div class="header_row">
+                <div class="header_group">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+
+                    <h2 class="header_title">
+                        Counter agents
+                    </h2>
+                </div>
+
+                <div class="header_group">
+                    <form action="#" class="header_search">
+                        <div class="header_search-input">
+                            <input type="text" placeholder="Search...">
+                        </div>
+
+                        <button class="header_search-btn">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.03 19.99C16.1828 19.99 20.36 15.8128 20.36 10.66C20.36 5.50714 16.1828 1.32996 11.03 1.32996C5.87721 1.32996 1.69995 5.50714 1.69995 10.66C1.69995 15.8128 5.87721 19.99 11.03 19.99Z"
+                                    stroke="#B3B3B3" stroke-width="2" stroke-miterlimit="10" />
+                                <path d="M25.1898 24.82L17.6299 17.26" stroke="#B3B3B3" stroke-width="2"
+                                    stroke-miterlimit="10" />
+                            </svg>
+                        </button>
+                    </form>
+
+                    <a href="#" class="notification active">
+                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.8801 20.75C16.9074 21.3008 16.8226 21.8514 16.6306 22.3684C16.4387 22.8853 16.1437 23.3579 15.7635 23.7574C15.3834 24.1569 14.9259 24.4749 14.4191 24.6923C13.9122 24.9096 13.3665 25.0217 12.8151 25.0217C12.2636 25.0217 11.7179 24.9096 11.2111 24.6923C10.7042 24.4749 10.2469 24.1569 9.86669 23.7574C9.48654 23.3579 9.19158 22.8853 8.99963 22.3684C8.80768 21.8514 8.72279 21.3008 8.75012 20.75H16.8801Z"
+                                stroke="#FBB03B" stroke-width="2" stroke-miterlimit="10" />
+                            <path
+                                d="M23.4901 20.7501H2.15009C1.97552 20.751 1.80408 20.7033 1.6551 20.6123C1.50611 20.5213 1.38549 20.3906 1.30659 20.2349C1.22768 20.0792 1.19369 19.9046 1.20844 19.7306C1.2232 19.5567 1.28608 19.3903 1.39008 19.2501L4.62006 14.9501V9.53005C4.6199 8.44133 4.83658 7.36348 5.25739 6.35937C5.67821 5.35526 6.29478 4.44501 7.07111 3.68171C7.84744 2.91841 8.76791 2.31735 9.779 1.91359C10.7901 1.50984 11.8715 1.31146 12.96 1.33005C15.1379 1.42087 17.195 2.3557 18.6956 3.93661C20.1963 5.51753 21.0227 7.62043 21.0001 9.80005V15.0001L24.21 19.3001C24.3023 19.4364 24.3568 19.5948 24.3679 19.759C24.3789 19.9233 24.3461 20.0876 24.2729 20.235C24.1997 20.3825 24.0887 20.5078 23.9511 20.5983C23.8136 20.6888 23.6545 20.7412 23.4901 20.7501Z"
+                                stroke="#FBB03B" stroke-width="2" stroke-miterlimit="10" />
+                        </svg>
+                    </a>
+
+                    <div class="user">
+                        <div class="user_photo">
+                            <img src="assets/images/user-photo.png" alt="user-photo">
+                        </div>
+
+                        <div class="user_group">
+                            <h4 class="user_name">
+                                Gayip Gayipov
+                            </h4>
+                            <div class="user_prof">
+                                Director
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main_inner">
+            <div class="profile">
+                <div class="post_info">
+                    <div class="post_box">
+                        <div class="post_box-row">
+                            <h4 class="post_box-title">
+                                0700 REV 77
+                            </h4>
+
+                            <div class="post_box-edit">
+                                <a href="#">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.1498 7.84009L5.20978 20.7801L0.779785 20.4601L0.469727 16.0501L13.4097 3.1001L18.1498 7.84009Z"
+                                            fill="#B3B3B3" />
+                                        <path
+                                            d="M21.0726 4.91951L16.335 0.181885L14.1288 2.38805L18.8664 7.12568L21.0726 4.91951Z"
+                                            fill="#B3B3B3" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" class="delete">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.830078 3.62012H20.6401" stroke="#B3B3B3" stroke-width="1.5"
+                                            stroke-miterlimit="10" />
+                                        <path d="M18.1198 3.61011L16.6498 19.8601H4.80981L3.33984 3.61011H18.1198Z"
+                                            stroke="#B3B3B3" stroke-width="1.5" stroke-miterlimit="10" />
+                                        <path d="M8.58008 8.02002V15.69" stroke="#B3B3B3" stroke-width="1.5"
+                                            stroke-miterlimit="10" />
+                                        <path d="M12.79 8.02002V15.69" stroke="#B3B3B3" stroke-width="1.5"
+                                            stroke-miterlimit="10" />
+                                        <path
+                                            d="M9.89038 0.779999H12.0904C12.7614 0.779999 13.4049 1.04654 13.8793 1.52101C14.3538 1.99548 14.6204 2.639 14.6204 3.31V3.62H7.36035V3.28C7.36035 2.609 7.62691 1.96548 8.10138 1.49101C8.57585 1.01655 9.21938 0.75 9.89038 0.75V0.779999Z"
+                                            stroke="#B3B3B3" stroke-width="1.5" stroke-miterlimit="10" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="post_box-info">
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    NAME
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    SERDAR
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    SURNAME
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    RY
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    DY TYPE
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    SERDACONTAINER 40 FT
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    STIMATED LOADING DATE
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    27.08.2022
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    LACE OF LOADING (FROM)
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    ISTANBUL, TURKEY
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    STINATION (WHERE)
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    ASHGABAT
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item full">
+                                <h6 class="post_box-item-suptitle">
+                                    CARGO DESCRIOTION
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    FURNITURE
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    ROXIMATE WEIGHT
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    TONS
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    VOLUME (m
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    79
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    PACKAGING TYPE
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    PALLET
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    EQUIRED VEHICLES
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    5
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item full">
+                                <h6 class="post_box-item-suptitle">
+                                    ATION
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    -
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    EMAIL
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    serdarnury@gmail.com
+                                </h4>
+                            </div>
+
+                            <div class="post_box-item">
+                                <h6 class="post_box-item-suptitle">
+                                    PHONE NUMBER
+                                </h6>
+                                <h4 class="post_box-item-title">
+                                    9362569309
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit">
+                        <form action="#" class="edit_form">
+                            <div class="edit_header">
+                                <div class="edit_header-input">
+                                    <label for="object">Object</label>
+                                    <input type="text" id="object" placeholder="Furniture">
+                                </div>
+
+                                <div class="edit_header-input">
+                                    <label for="place">To</label>
+                                    <input type="text" id="place" placeholder="DYLLA J.">
+                                </div>
+
+                                <div class="edit_header-input date">
+                                    <label for="date">ATE</label>
+                                    <input type="text" id="date" placeholder="24/05/22">
+                                </div>
+                            </div>
+
+                            <div class="edit_body">
+                                <div class="edit_main">
+                                    <div class="edit_main-row">
+                                        <div class="edit_main-group">
+                                            <p class="edit_main-num">
+                                                #
+                                            </p>
+
+                                            <h6 class="edit_main-title">
+                                                MS
+                                            </h6>
+                                        </div>
+
+                                        <h6 class="edit_main-title">
+                                            ROUTE
+                                        </h6>
+
+                                        <h6 class="edit_main-title">
+                                            COST
+                                        </h6>
+                                    </div>
+
+                                    <div class="edit_main-input">
+                                        <input type="text" placeholder="OT">
+                                        <input type="text" placeholder="БУРСА - ИРАН - АШХАБАД">
+                                        <input type="text" placeholder="0,00">
+                                    </div>
+
+                                    <div class="edit_main-input">
+                                        <input type="text" placeholder="OT">
+                                        <input type="text" placeholder="БУРСА - ИРАН - АШХАБАД">
+                                        <input type="text" placeholder="0,00">
+                                    </div>
+                                </div>
+
+
+                                <h6 class="edit_body-title">
+                                    CE INCLUDE
+                                </h6>
+
+                                <div class="edit_body-box">
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <h6 class="edit_body-title">
+                                    CE DOESN’T INCLUDE
+                                </h6>
+
+                                <div class="edit_body-box">
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <h6 class="edit_body-title">
+                                    ECESSARY DOCUMENTATION
+                                </h6>
+
+                                <div class="edit_body-box">
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <h6 class="edit_body-title">
+                                    OTES
+                                </h6>
+
+                                <div class="edit_body-box">
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="edit_body-input">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <h6 class="edit_body-title">
+                                    VALIDITY
+                                </h6>
+
+                                <div class="edit_body-box">
+                                    <div class="edit_body-input no-count">
+                                        <input type="text" placeholder="07/09/2022">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main end ============================================= -->
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/data-table.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        // Data tables
+        $(document).ready(function () {
+            $('.customer_table table').DataTable({
+                // "pagingType": "simple",
+                "info": false,
+                "lengthChange": false,
+                "pageLength": 10,
+                "searching": true,
+                "fixedHeader": true,
+                "scrollX": true,
+                "language": {
+                    // "url": "dataTables.russian.lang",
+                    // "search": "Поиск:",
+                    "paginate": {
+                        first: '«',
+                        previous: '‹',
+                        next: '›',
+                        last: '»'
+                    },
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
