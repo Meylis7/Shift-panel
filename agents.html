@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/data-table.css">
+    <link rel="stylesheet" href="assets/css/dataTableMobile.css">
+    <link rel="stylesheet" href="assets/css/dataTableResponsive.css">
     <link rel="stylesheet" href="assets/fonts/Arodora/stylesheet.css">
 
     <title>Agents</title>
@@ -113,19 +115,19 @@
             <div class="main_header">
                 <div class="main_header-top">
                     <div class="main_header-tabs">
-                        <a href="#" class="active">
+                        <a href="#" class="active toggle-vis" data-column="0">
                             All
                         </a>
-                        <a href="#">
+                        <a href="#" class="toggle-vis" data-column="1">
                             Rocess
                         </a>
-                        <a href="#">
+                        <a href="#" class="toggle-vis" data-column="2">
                             Ished
                         </a>
-                        <a href="#">
+                        <a href="#" class="toggle-vis" data-column="3">
                             Ot Started
                         </a>
-                        <a href="#">
+                        <a href="#" class="toggle-vis" data-column="4">
                             Canceled
                         </a>
                     </div>
@@ -486,22 +488,21 @@
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/data-table.min.js"></script>
+    <script src="assets/js/dataTableMobile.min.js"></script>
+    <script src="assets/js/dataTableResponsive.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <script>
         // Data tables
         $(document).ready(function () {
-            $('.customer_table table').DataTable({
-                // "pagingType": "simple",
+            var table = $('.customer_table table').DataTable({
                 "info": false,
                 "lengthChange": false,
                 "pageLength": 10,
                 "searching": true,
                 "fixedHeader": true,
-                "scrollX": true,
+                // "scrollX": true,
                 "language": {
-                    // "url": "dataTables.russian.lang",
-                    // "search": "Поиск:",
                     "paginate": {
                         first: '«',
                         previous: '‹',
@@ -509,11 +510,25 @@
                         last: '»'
                     },
                 },
-                // "columnDefs": [
-                //     { orderable: false, targets: -1 }
-                // ]
+
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true
 
             });
+
+
+            $('a.toggle-vis').on('click', function (e) {
+                e.preventDefault();
+
+                // Get the column API object
+                var column = table.column($(this).attr('data-column'));
+
+                // Toggle the visibility
+                column.visible(!column.visible());
+            });
+
         });
     </script>
 </body>
