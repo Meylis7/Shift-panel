@@ -4,7 +4,38 @@
     background: #fff;
 
     .burger {
-        display: none;
+        display: block;
+        margin-right: 35px;
+        width: 30px;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background: #000;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: 0;
+                width: 30px;
+                height: 1px;
+                background: #000;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 30px;
+                height: 1px;
+                background: #000;
+            }
+        }
     }
 
     &_row {

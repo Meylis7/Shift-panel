@@ -53,6 +53,7 @@
                     border-right: 1px solid #B3B3B3;
                     border-bottom: none;
                     text-transform: uppercase;
+                    min-width: 139px;
 
                     &:last-child {
                         border-right: none;
@@ -202,7 +203,7 @@
                         border-right: 1px solid #B3B3B3;
                         padding: 12px 15px;
                         background: #fff;
-                        min-width: 130px;
+                        min-width: 135px;
 
                         &:last-child {
                             border-right: none;

@@ -279,6 +279,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-direction: column;
             border-bottom: 1px solid #B3B3B3;
             padding-bottom: 30px;
             margin-bottom: 25px;
@@ -288,6 +289,7 @@
             font-weight: 300;
             font-size: 22px;
             line-height: 1.4;
+            text-align: center;
         }
 
         &_edit {
